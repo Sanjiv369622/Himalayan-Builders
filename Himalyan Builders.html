@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himalayan Builders | हिमालयन बिल्डर्स</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+    header { background: linear-gradient(90deg, #2c3e50, #3498db); color: #fff; padding: 2rem 1rem; text-align: center; animation: fadeInDown 1s ease-in-out; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 0.5rem 0; }
+    nav { margin-top: 1rem; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 3rem 1rem; max-width: 1000px; margin: auto; background: #fff; margin-top: 2rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); animation: fadeIn 1.5s ease-in; }
+    h2 { color: #2c3e50; margin-top: 0; }
+    ul { padding-left: 1.2rem; }
+    .gallery-location { margin-bottom: 2rem; }
+    .gallery-location h3 { margin-bottom: 0.5rem; color: #2980b9; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .gallery img { width: 32%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .gallery img:hover { transform: scale(1.05); }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; font-family: 'Roboto', sans-serif; }
+    form input[type="submit"] { background-color: #3498db; color: white; border: none; cursor: pointer; transition: background 0.3s; }
+    form input[type="submit"]:hover { background-color: #2980b9; }
+    footer { background-color: #2c3e50; color: white; text-align: center; padding: 1.5rem; margin-top: 2rem; border-top: 5px solid #3498db; }
+    a { color: #3498db; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .owner-photo { text-align: center; margin-top: 1rem; }
+    .owner-photo img { width: 180px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.2); animation: fadeInUp 1.5s ease; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Himalayan Builders | हिमालयन बिल्डर्स</h1>
+    <p>Professional Construction Team in Himachal Pradesh</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us | हमारे बारे में</h2>
+    <p><strong>Owner:</strong> Mr. Lautan Tharu</p>
+    <div class="owner-photo">
+      <img src="owner.jpg" alt="Owner Loutan Chaudhary">
+    </div>
+    <p>We are a skilled team of masons providing full construction services across Himachal Pradesh including Kullu, Manali, Shimla, Lahaul, and nearby areas. Our work is known for accuracy, strength, and timely delivery.</p>
+    <p>हम हिमाचल प्रदेश के कुल्लू, मनाली, शिमला, लाहौल व अन्य क्षेत्रों में निर्माण कार्य करने वाली अनुभवी राजमिस्त्रियों की टीम हैं। हमारा कार्य समय पर और पूरी नाप-तौल के साथ होता है।</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services | हमारी सेवाएं</h2>
+    <ul>
+      <li>1. Patthar Gharai | पत्थर घराई</li>
+      <li>2. Eent Chinai | ईंट चिनाई</li>
+      <li>3. Block Chinai | ब्लॉक चिनाई</li>
+      <li>4. Plaster | प्लास्टर</li>
+      <li>5. RCC Danga | आरसीसी डंगा</li>
+      <li>6. Patthar Design (कटिंग व डिज़ाइन) | पत्थर डिज़ाइन</li>
+      <li>7. Tiles Fitting | टाइल्स फिटिंग</li>
+      <li>8. Boundary Wall | बाउंड्री वॉल निर्माण</li>
+      <li>9. Complete House Construction (Theke par) | ठेके पर पूरा मकान निर्माण</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery | गैलरी</h2>
+    <p>काम की लोकेशन अनुसार फ़ोटो:</p>
+
+    <div class="gallery-location">
+      <h3>Kullu</h3>
+      <div class="gallery">
+        <img src="kullu1.jpg" alt="Kullu Work 1">
+        <img src="kullu2.jpg" alt="Kullu Work 2">
+      </div>
+    </div>
+
+    <div class="gallery-location">
+      <h3>Manali</h3>
+      <div class="gallery">
+        <img src="manali1.jpg" alt="Manali Work 1">
+        <img src="manali2.jpg" alt="Manali Work 2">
+      </div>
+    </div>
+
+    <div class="gallery-location">
+      <h3>Shimla</h3>
+      <div class="gallery">
+        <img src="shimla1.jpg" alt="Shimla Work 1">
+        <img src="shimla2.jpg" alt="Shimla Work 2">
+      </div>
+    </div>
+
+    <div class="gallery-location">
+      <h3>Lahaul(Gaundala)</h3>
+      <div class="gallery">
+        <img src="lahaul1.jpg" alt="Lahaul Work 1">
+        <img src="lahaul2.jpg" alt="Lahaul Work 2">
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery | गैलरी</h2>
+    <p>Based on Design of Patthar Gharai </p>
+    <div class="gallery-location">
+      <h3>Mehen Gharai</h3>
+      <div class="gallery">
+        <img src="mehen1.jpg" alt="Mehen Gharai 1">
+      </div>
+    </div>
+
+        <div class="gallery-location">
+      <h3>Medium Gharai</h3>
+      <div class="gallery">
+        <img src="medium1.jpg" alt="Medium Gharai 1">
+      </div>
+    </div>
+
+        <div class="gallery-location">
+      <h3>Mota Medium Gharai</h3>
+      <div class="gallery">
+        <img src="motamedium1.jpg" alt="Mota Medium Gharai 1">
+      </div>
+    </div>
+
+        <div class="gallery-location">
+      <h3>Patti Medium Gharai</h3>
+      <div class="gallery">
+        <img src="pattimedium1.jpg" alt="Mehen Gharai 1">
+        <img src="pattimedium2.jpg" alt="Mehen Gharai 2">
+      </div>
+    </div>
+  </section>
+
+    
+        <div class="gallery-location">
+      <h3>Tiles</h3>
+      <div class="gallery">
+        <img src="tiles1.jpg" alt="Tiles 1">
+      </div>
+    </div>
+    
+
+  <section id="contact">
+    <h2>Contact Us | संपर्क करें</h2>
+    <p>📞 Call us: +91 9817175545, +91 9816306402</p>
+    <p>📍 Based in: Kullu, Manali, Shimla, Lahaul, and nearby Himachal areas</p>
+    <p>📩 Facebook: <a href="#">Your Facebook Link</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/919817175545">Chat on WhatsApp</a></p>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label>Name | नाम:</label><br />
+      <input type="text" name="name" placeholder="Your Name" required /><br />
+      <label>Message | सन्देश:</label><br />
+      <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea><br />
+      <input type="submit" value="Send | भेजें" />
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Himalayan Builders | Designed for Himachal Pradesh</p>
+  </footer>
+</body>
+</html>
